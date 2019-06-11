@@ -28,6 +28,10 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\src\app\components\material\material.module.ts" />
+  </ItemGroup>
+
  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
